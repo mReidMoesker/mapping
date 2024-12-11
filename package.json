@@ -1,0 +1,23 @@
+{
+  "name": "package-locator",
+  "version": "1.0.0",
+  "description": "website to show location API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mReidMoesker/mapping.git"
+  },
+  "keywords": [
+    "Location",
+    "Package"
+  ],
+  "author": "Mathew Moesker",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

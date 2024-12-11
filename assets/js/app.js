@@ -16,11 +16,10 @@ if (navigator.geolocation) {
       L.marker([latitude, longitude])
         .addTo(map)
         .bindPopup('You are here!')
-        .openPopup();
 
       L.circle([latitude, longitude], {
         color: 'blue',
-        radius: position.coords.accuracy
+        radius: 10500
       }).addTo(map);
     },
 

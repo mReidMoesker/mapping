@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mathew Moesker">
-    <meta name="description" content="typing, game, fun, interactive">
+    <meta name="description" content="package, find, seek, js">
     <title>PackTrack: track your packages with ease</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-    <script src="https://kit.fontawesome.com/cd92dcd941.js" crossorigin="anonymous"></script>
+
+    <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script 
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <script 
+    src="https://kit.fontawesome.com/cd92dcd941.js" 
+    crossorigin="anonymous"></script>
+  
   </head>
   <body>
     <header>
@@ -22,14 +37,17 @@
       </div>
     </header>
     <main>
-      <div class="container alignment body">
+      <div class="container body">
         <h2>Track Your Package</h2>
         <p>Find out where your packages are with our simple online application</p>
         <p>Service rates may apply for mobile users</p>
+        <button class="track-button">Track</button>
+        <div class="container flex center">
+          <div class="map" id="map"></div> <!--Leaflet requires an id, normally I would use only class-->
+        </div>
       </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="./assets/js/app.js"></script>
+    <!--The reason why i put the main script at the bottom is to avoid DOM content not loading errors -->
   </body>
 </html>

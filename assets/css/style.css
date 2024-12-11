@@ -46,7 +46,7 @@ body {
   height: 80px;
 }
 
-.login {
+button {
   padding: 10px 20px 12px 20px;
   height: 100%;
   background-color: #0099ff;
@@ -57,7 +57,7 @@ body {
   transition: 5ms ease-in-out;
 }
 
-.login:hover {
+button:hover {
   background-color: aqua;
   transition: 5ms ease-in-out;
 }
@@ -65,7 +65,8 @@ body {
 .body {
   text-align: center;
   margin: auto;
-  padding: 50px;
+  padding-top: 30px;
+  width: 100%;
 
   h2 {
     font-size: 1.9rem;
@@ -75,4 +76,11 @@ body {
   p {
     font-size: 0.8rem;
   }
+}
+
+.map {
+  height: 325px;
+  width: 80%;
+  padding: 20px;
+  margin-top: 30px;
 }
